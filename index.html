@@ -16,7 +16,8 @@ html {
 var clicks = 0;
 
 function click {
-  click = click + 1
+  clicks = clicks + 1
+  document.getElementById("clickstext").innerHTML = clicks
 }
 </script>
 
@@ -25,6 +26,7 @@ function click {
 <h1>Clicker</h1>
 <h2>By Jacob Domingo</h2>
 <button onclick="">Click</button>
+  <h3 id="clickstext">0</h3><h3> Clicks</h3>
 </body>
 </center>
 

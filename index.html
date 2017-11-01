@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Clicker by Jacob Domingo</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="jfavicon.ico" type="image/x-icon">
 <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
 </head>
 
@@ -10,23 +10,24 @@ html {
   font-family: 'Baloo';
   font-size: 22px;
 }
+button {
+  font-family: 'Baloo';
+  font-size: 22px;
+}
 </style>
   
 <script>
+alert("Warning! Your progress on this site does not save!");
+alert("This game is still a work in progress...");
 var clicks = 0;
-
-function click {
-  clicks = clicks + 1;
-  document.getElementById("clickstext").innerHTML = clicks;
-}
 </script>
 
 <center>
 <body>
 <h1>Clicker</h1>
 <h2>By Jacob Domingo</h2>
-<button onclick="click()">Click</button>
-  <h3 id="clickstext">0</h3><h3>Clicks</h3>
+<button onclick="clicks++; document.getElementById('clickstext').innerHTML = clicks + ' Clicks';">Click</button>
+  <h3 id="clickstext">0 Clicks</h3>
 </body>
 </center>
 

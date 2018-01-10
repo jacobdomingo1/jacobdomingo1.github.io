@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Clicker by Jacob Domingo</title>
+<title id="title">Clicker by Jacob Domingo</title>
 <link rel="shortcut icon" href="jfavicon.ico" type="image/x-icon">
 <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
 </head>
@@ -24,10 +24,11 @@ var clicks = 0;
 <body>
 <h1>★ Clicker ★</h1>
 <h2>By Jacob Domingo</h2>
-<button style="cursor: pointer; background-color: transparent; border-color: transparent;" onclick="clicks++; document.getElementById('clickstext').innerHTML = clicks + ' Clicks';"><img src="cursorimg.png" alt="Click" style="width:150px;height:150px;"></button>
+<button id="button" style="cursor: pointer; background-color: transparent; border-color: transparent;" onclick="clicks++; document.getElementById('title').innerHTML = 'REALLY?'; document.getElementById('button').innerHTML = 'TEEHEE'; document.getElementById('clickstext').innerHTML = 'TEEHEE'; document.getElementById('bt1').innerHTML = 'TEEHEE'; document.getElementById('bt2').innerHTML = 'TEEHEE';"><img src="cursorimg.png" alt="Click" style="width:150px;height:150px;"></button>
   <h3 id="clickstext">0 Clicks</h3>
-  <p>Your progress on this site does not save</p>
-  <p>This game is still a work in progress</p>
+  <p id="bt1">Your progress on this site does not save</p>
+  <p id="bt2">This game is still a work in progress</p>
+  
 </body>
 </center>
 
